@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Prework Study Guide</title>
+  </head>
+  <body>
+    <header id="top">
+      <h1>Prework Study Guide</h1>
+      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+    </header>
+    <main>
+      <section class="card" id="html-section">
+      <h2>HTML</h2>
+      <ul>
+        <li>The head element contains information about the webpage. Metadata.</li>
+        <li>The body element represents the visible content shown to the user.</li>
+        <li>Before the head, start with a declaration: '!DOCTYPE html'</li>
+        <li>After declaration, need opening tag, which represents the root or start of HTML document, and give language attribute: 'html lang="en" </li>
+        <li>The 'title' is for SEO and what appears in the tab in the browser</li>
+        <li>Semanti HTML elements: the name of the element describes its content and the role it plays on a webpage
+        <li>Remember to close the tags!</li>
+        <li>Can add different sized Headings with h1, h2, h3, etc tags.
+        <li>Create unordered list with ul tag and list items with li tag.</li>
+        <li>Define sections of a webpage with the 'section' tag and notate the class of the section, like "card" and then give section an ID</li>
+        </li>
+      </ul>
+      </section>
+
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>InLine CSS is when you style an element within it's tag</li>
+          <li>Internal Style Sheet is when you embed an entire style sheet directly in the HTML file using the style tag in the head of the document.</li>
+          <li>External Style Sheet is most common: Keep all of your CSS rules in a separate file, which makes design changes easier. Must link the style sheet in the HTML's head with 'link rel="stylesheet" href="./folderName/styleSheetName</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="git-section">
+        <h2>GIT</h2>
+        <ul>
+          <li>git status (in CLI): checks what branch we are currently on</li>
+          <li>git checkout branch-name (in CLI): switches to branch. For example, "git checkout main" to switch to main branch</li>
+          <li>git checkout -b branch-name (in CLI): creates a new branch and switches to it.</li>
+          <li>git add -A (in CLI): stage your changes to commit all files in the working branch</li>
+          <li>git commit -m "text for message" (in CLI) associates the message for our commit. Should be short
+            descriptive message of the changes implemented.
+          </li>
+          <li>git pull origin main (in CLI): open pull requests. Syncs local branch with the remote branch in GitHub</li>
+          <li>git push origin branch name (in CLI):push all changes from the feature branch</li>
+          <li>GIT FLOW: make sure you are in the feature branch with git status --> git add -A --> git commit -m "message of commit" --> git pull origin main --> git push origin FeatureBranchName --> in repository on GitHub, click pull requests, then New Pull Request --> base branch should be Main, and comparistion branch is Feature Branch --> add title and description of pull request --> click pull request
+          --> click Merge Pull Request then confirm the merge --> close the Git Hub Issue in Issue tab. --> back in CLI, navigate to main branch git checkout main --> pull remote main branch to local main branch git pull origin main
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>every line of JS code must end with semicolon ; except when closing curly brackets } </li>
+          <li>variables store data in our code. define variables with "var variable-name = data;"</li>
+          <li>control flow is the order in which a computer executes code in a script. Browsers read code top to bottom</li>
+          <li>you can also define a variable as an array of many data points with "var variable-name = [data0, data1, data2, ...]"</li>
+          <li>variables can have different types, like strings (must have quotation marks around the data), numbers (no quotation marks), boolean values (true or false, with no quotation marks) etc.</li>
+          <li>"if" statements are useful. type "if (variable-name === value/index) {code block to execute if true};".</li>
+          <li>Can string together conditional statements using "else if" instead of "if" ORDER MATTERS</li>
+          <li>If an array is very large, too many conditional statements is cumbersome. use a for loop. for loops contain
+            three statements, the starting point: (example, var x = 0; ), the condition: (example, x < variable-name.length; ), and the iteration statement: (example, x++)
+          <li>an example of logging to the console every data point in an array would be:
+            for(var x = 0; x < variable-name.length; x++) {console.log(variable-name[x]);}
+          </li>
+          <li>A function is a set of instructions that tells computer how to perform a task. A function is simply the instructions, but must be called.</li>
+          <li>define a function with its declaration. Example: function functionName() { //code block};</li>
+          <li>the empty parenthases are for adding parameters if needed.</li>
+          <li>can call a function in the console on Chrome Developer Tools (inspect) by typing the function name followed by the parameters. 
+            example: functionName();
+            <li>To generate a random element from an array, define a new variable: var randomeItem = arrayName[Math.floor(Math.random() * arrayName.length)];
+            </li>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>I can code!</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
